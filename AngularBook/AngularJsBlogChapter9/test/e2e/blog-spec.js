@@ -1,7 +1,7 @@
 describe("Blog Application Test", function(){
     it("should test the main blog page", function(){
         
-        browser.get("http://localhost:8383/AngularJsBlogChapter8/");
+        browser.get("http://localhost:8383/AngularJsBlogChapter9/");
         expect(browser.getTitle()).toEqual("AngularJS Blog");
         
         //gets the blog list
@@ -11,7 +11,7 @@ describe("Blog Application Test", function(){
         expect(blogList.count()).toEqual(1);
         
         
-        browser.get("http://localhost:8383/AngularJsBlogChapter8/#!/blogPost/5394e59c4f50850000e6b7ea");
+        browser.get("http://localhost:8383/AngularJsBlogChapter9/#!/blogPost/5394e59c4f50850000e6b7ea");
         expect(browser.getTitle()).toEqual("AngularJS Blog");
         
         //gets the comment list
@@ -19,6 +19,8 @@ describe("Blog Application Test", function(){
         
         //checks the size of the commentList
         expect(commentList.count()).toEqual(2);
+        
+        element(by.css('.navbar-brand')).click();
         
         
     });
