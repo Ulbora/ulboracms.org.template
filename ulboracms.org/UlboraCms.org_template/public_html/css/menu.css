@@ -1,0 +1,337 @@
+.top-menu{
+    float: left;
+    width: 100%;   
+    /*background: dimgrey;*/
+    background: #eee;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;  
+    text-align: center;
+    border-bottom: #3A464F 1px solid;
+    box-shadow: 0px 5px 5px #888888;
+}
+.top-menu-space{
+    width: 100%;
+    float: left;
+    text-align: left;    
+
+}
+.logo{
+    float: left;
+    color: black;    
+    font-family: serif;      
+}
+
+.github-logo{
+    float: left;   
+    width: 100%;
+    text-align: center; 
+}
+
+.top-menu-menu{    
+    float: left; 
+    text-align: center;
+
+}
+
+.nav-dt {    
+
+}
+
+.nav-dt ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+.nav-dt ul li {
+    display: block;
+    position: relative;
+    float: left;    
+}
+
+.nav-dt ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 7px 15px 3px 15px;
+    /*background: #2C5463;*/
+    /*background: dimgrey;*/
+    background: #adadad;
+    color: #ffffff;  
+    margin-left: 1px;
+    white-space: nowrap;
+    height:30px; /* Width and height of top-level nav items */
+    width:120px;
+    text-align:center;
+
+}
+.nav-dt ul li a:hover { 
+    /*background: #617F8A; */
+    /*background: #95A9B1;*/
+    background: #ccc;
+    color: black;
+    padding: 7px 15px 3px 15px;
+
+}
+
+.nav-dt li:hover ul {
+    display: block;
+    position: absolute;
+    height:30px;
+
+}
+
+.nav-dt li:hover li {
+    float: none;
+    font-size: 11px;
+
+}
+
+.nav-dt li:hover a { 
+    background: #3A464F; 
+    height:30px; /* Height of lower-level nav items is shorter than main level */
+    padding: 7px 2px 0 7px;
+
+}
+.nav-dt li:hover li a { 
+    background: #95A9B1; 
+    padding: 7px 2px 0 7px;
+    text-align:center;
+}
+
+.nav-dt li:hover li a:hover { 
+    background: #95A9B1; 
+
+}
+
+.nav-dt ul li ul {
+    display: none;
+}
+
+.nav-dt ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+
+}
+
+.active{
+    background: #ccc;
+}
+
+.mobile-menu{
+    float: left;    
+    width: 100%;    
+}
+@media screen and (min-width: 1400px){
+    .mobile-menu{
+        display: none;
+    }
+    .top-menu{
+        display: block;
+        height: 100px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;  
+    }
+    .top-menu-space{
+        height: 60px;
+        padding: 0 0 0 0;        
+    }
+    .top-menu-menu{
+        padding: 0 0 0 0;  
+        width: 60%;
+        margin: 0 0 0 20%;        
+    }
+    .logo{
+        /*font-size: 26pt;
+        margin: 1% 0 0 12%;
+        width: 5%;
+        text-shadow: 1px 2px lightyellow;
+        background: red;*/
+        display: none;
+    }
+    .logo-img{
+        font-size: 26pt;
+        margin: 1% 0 0 12%;
+        width: 5%;
+        text-shadow: 1px 2px lightyellow;
+        /*background: red;*/
+    }
+    .logo-img img{
+        max-width: 95%;
+    }
+    .github-logo img{
+        padding: 5% 0 0 0;
+        max-width: 3%;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+    .mobile-menu{
+        display: none;
+    }
+    .top-menu{
+        display: block;
+        height: 100px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;  
+    }
+    .top-menu-space{
+        height: 60px;
+        padding: 0 0 0 0;        
+    }
+    .top-menu-menu{
+        padding: 0 0 0 0;  
+        width: 60%;
+        margin: 0 0 0 20%;        
+    }
+    .logo{
+        /*font-size: 26pt;
+        margin: 1% 0 0 12%;
+        width: 6%;
+        text-shadow: 1px 2px lightyellow;
+        background: blue;*/
+        
+    }
+    .logo-img{
+        font-size: 26pt;
+        margin: 1% 0 0 12%;
+        width: 6%;
+        text-shadow: 1px 2px lightyellow;
+        /*background: blue;*/
+    }
+    .logo-img img{
+        max-width: 100%;
+    }
+    .github-logo img{
+        padding: 5% 0 0 0;
+        max-width: 3%;
+    }
+}
+
+@media screen and (max-width: 1270px){
+    .mobile-menu{
+        display: block;
+        margin: 0 0 5% 0;
+    }
+    .top-menu{
+        display: none; 
+    }
+    .top-menu-space{
+        height: 60px;
+        padding: 0 0 0 0;        
+    }
+    .top-menu-menu{
+        display: none;
+    }
+    .logo{
+        display: block;
+        font-size: 14pt;
+        margin: 1% 0 0 6%;
+        text-shadow: 1px 2px lightyellow;        
+        width: 30%;
+    }
+    .logo-img{
+        display: none;
+    }
+    .logo-img img{
+        max-width: 100%;
+    }
+    .github-logo img{
+        padding: 5% 0 0 0;
+        max-width: 5%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .mobile-menu{
+        display: block;
+        margin: 0 0 5% 0;
+    }
+    .top-menu{
+        display: none; 
+    }
+    .top-menu-menu{
+        display: none;
+    }
+    .logo{
+        display: block;
+        font-size: 14pt;
+        margin: 1% 0 0 6%;
+        text-shadow: 1px 2px lightyellow;        
+        width: 30%;
+    }
+    .logo-img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .mobile-menu{
+        display: block;
+        margin: 0 0 10% 0;
+    }
+    .top-menu{
+        display: none; 
+    }
+    .top-menu-space{
+        height: 40px;
+        padding: 0 0 0 0;        
+    }
+    .top-menu-menu{
+        padding: 0 0 0 0; 
+        width: 90%;
+        margin: 0 0 0 5%;
+    }
+    .nav-dt ul li a {
+        font-size: 10px;
+        width:60px;
+        padding: 7px 10px 3px 10px;
+    }
+    .logo{
+        font-size: 14pt;
+        margin: 1% 0 0 6%;
+        text-shadow: 1px 2px lightyellow;        
+        width: 30%;
+    }
+    .logo-img{
+        display: none;
+    }
+    .github-logo img{
+        padding: 5% 0 0 0;
+        max-width: 6%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .mobile-menu{
+        display: block;
+        margin: 0 0 14% 0;
+    }
+    .top-menu{
+        display: none; 
+    }
+    .top-menu-space{
+        height: 40px;
+        padding: 0 0 0 0;        
+    }
+    .top-menu-menu{
+        padding: 0 0 0 0; 
+        width: 100%;
+        margin: 0 0 0 0%;
+    }
+    .nav-dt ul li a {
+        font-size: 10px;
+        width:60px;
+        padding: 7px 10px 3px 10px;
+    }
+    .logo{
+        font-size: 14pt;
+        margin: 1% 0 0 6%;
+        text-shadow: 1px 2px lightyellow;        
+        width: 30%;
+    }
+    .logo-img{
+        display: none;
+    }
+    .github-logo img{
+        padding: 5% 0 0 0;
+        max-width: 10%;
+    }
+}

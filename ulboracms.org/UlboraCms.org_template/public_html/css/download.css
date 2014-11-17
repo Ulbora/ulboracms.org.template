@@ -1,0 +1,71 @@
+.download{
+    float: left;    
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1400px){
+    .download{
+        width: 60%;
+        margin: 2% 0 0 20%;    
+    }
+    .download img{
+
+        max-width: 5%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .download{
+        width: 60%;
+        margin: 2% 0 0 20%;    
+    }
+    .download img{
+
+        max-width: 5%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .download{
+        width: 60%;
+        margin: 2% 0 0 20%;    
+    }
+    .download img{
+
+        max-width: 5%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .download{
+        width: 60%;
+        margin: 2% 0 0 20%;    
+    }
+    .download img{
+
+        max-width: 6%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .download{
+        width: 60%;
+        margin: 2% 0 0 20%;    
+    }
+    .download img{
+
+        max-width: 8%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .download{
+        width: 60%;
+        margin: 2% 0 0 20%;    
+    }
+    .download img{
+
+        max-width: 10%;
+    }
+}
